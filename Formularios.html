@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <a href="index.html" style="font-size: 20px;">Inicio😁</a> <br/>
+    <a href="cv.html" style="font-size: 20px;">⬅Anterior</a>
+    <a href="estilos.html" style="font-size: 20px;">Siguiente➡</a>
+    <hr />
+    <h1>Formulario</h1>
+    <h2>Formulario con post</h2>
+    <form action="Formularios.html" method="get">
+    <input type="text" name="nombre" placeholder="nombre" id="name" required/>
+    <br>
+    <input type="text" name="Apellido_paterno" placeholder="Apellido_paterno" required/>
+    <br>
+    <input type="text" name="Apellido_Materno" placeholder="Apellido_Materno" required/>
+    <br>
+    <input type="text" name="nombre" />
+    <br>
+    <input type="password" name="clave" />
+    <br>
+    <input type="file" name="archivo" />
+    <br>
+    <input type="checkbox" name="acepto" />
+    <br>
+    <input type="hidden" name="sexo" value="M">
+    <br>
+    <div>
+        <label for="Masculino">
+            <input type="radio" id="Masculino" name="genero" value="M" checked/>
+            Masculino
+        </label>
+    </div>
+    <div>
+        <label for="Femenino">
+            <input type="radio" id="Femenino" name="genero" value="F" checked/>
+            Femenino
+        </label>
+    </div>
+    <br>
+    <input type="hidden" name="folio" />
+    <br>
+    <input type="email" name="" id="" />
+    <br>
+    <input type="color" name="" id="" />
+    <br>
+    <input type="date" name="" id="" />
+    <br>
+    <input type="search" name="" id="">
+    <br>
+    <textarea name="comentario" rows="4" cols="59">
+        Escribe aqui tu comentario...
+    </textarea>
+    <br>
+    <label for="Nombre">Nombre:</label>
+    <input type="text" id="Nombre" name="Nombre">
+    <br>
+    <label for="país">País
+    <select name="país" id="país">
+        <option value="MX" selected>México</option>
+        <option value="US">Estados Unidos</option>
+        <option value="CA">Canadá</option>
+    <br>
+    <label for="color">color</label>
+    <select name="color" id="color">
+        <option value="roj" selected>rojo</option>
+        <option value="verd">verde</option>
+        <option value="azu">Azul</option>
+    </select>
+    <br>
+    <label for="colores">colores</label>
+    <select name="colores" id="colores">
+        <optgroup label="colores primarios">
+        <option value="rojo">rojo</option>
+        <option value="verde">verde</option>
+        <option value="azul">Azul</option>
+        </optgroup>
+        <optgroup label="colores secundarios">
+        <option value="violeta">violeta</option>
+        <option value="amarillo">amarillo</option>
+        <option value="naranja">naranja</option>
+        </optgroup>
+    </select>
+    </label>
+    </select>
+<br>
+    <button type="submit">enviar</button>
+<br>
+    <button type="reset">limpiar</button>
+<br>
+    <button type="button">cancelar</button>
+<br>
+<button type="submit">
+    <img src="assets/1.png" alt="img" width="50">
+</button>
+<br>
+<fieldset disabled>
+    <legend>Datos personales</legend>
+    <label for="nombre">Nombre;</label>
+    <input type="text" id="nombre" name="nombre" />
+    <label for="apellido">apellido:</label>
+    <input type="text" id="apellido" name="apellido" />
+</fieldset>
+<br>
+<input type="colores" name="color">
+<datalist> 
+    <option value="rojo"></option>
+    <option value="verde"></option>
+    <option value="azul"></option>
+</datalist>
+
+<br>
+<h2>formulario con get</h2>
+<h2>Formulario con GET </h2>
+<form action="Formularios.html" method="GET" >
+    <fieldset >
+        <legend>Datos Personales</legend>
+  
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre"required/><br />
+    <label for="apeido_pat">Apellido Paterno:</label>
+    <input type="text" id="apeido_pat" name="apeido_pat" placeholder="Apellido Paterno" required/><br />
+    <label for="apeido_mat">Apellido Materno:</label>
+    <input type="text" id="apeido_mat" name="apeido_mat" placeholder="Apellido Materno" required/><br />
+    <label for="clave">Contraseña:</label>
+    <input type="password" id="clave" name="clave"/><br />
+    <label for="archivo">Archivo:</label>
+    <input type="file" id="archivo" name="archivo"/><br />
+    <label for="acepto">Checkbox:</label>
+    <input type="checkbox" id="acepto" name="acepto"/><br />
+    <br/>
+        <div>
+        <label for="masculino">
+        <input type="radio" id="masculino" name="genero" value="M" checked/>
+        Masculino</label>
+        </div>
+        <div>
+        <label for="femenino">
+        <input type="radio" name="genero" id="femenino" value="F"/>
+        Femenino</label>
+        </div>
+        <div>
+        <label for="Prefiero no decirlo">
+        <input type="radio" name="genero" id="Prefiero no decirlo" value="F"/>
+        prefiero no decirlo</label>
+        </div>
+    <br/>
+    <input type="hidden" name="folio" value="UFEJ838"  />
+
+    <label for="correo">Correo Electronico:</label>
+    <input type="email" id="correo" name="correo"/><br />
+</fieldset>
+</body>
+</html>

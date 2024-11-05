@@ -1,0 +1,98 @@
+:root{
+--pale-purple: #e8d7f1ff;
+--thistle: #d3bcccff;
+--pomp-and-power: #a167a5ff;
+--tekhelet: #4a306dff;
+--prussian-blue: #0e273cff;
+}
+h1.verde{
+    font-family: "Tiny5";
+}
+p.azul{
+    font-family: "Dancing Script";
+}
+li.verde{
+    font-family: "Shadows Into Light";
+}
+button:active{
+    background-color:  var(--tekhelet);
+    font-size: 24px;
+}
+a:hover{
+    color: var(--pomp-and-power);
+
+}
+p:has(svg){
+    color: var(--tekhelet);
+    font-size: 20px;
+}
+[href^="#"]{
+    color: var(--thistle);
+    font-size: 24px;
+}
+p::first-letter{
+    font-family: "Rubik Wet Paint";
+    font-size: 24px;
+}
+div pre::after{
+    content: "🤡🤡";
+}
+div pre::before{
+    content: "👻👻";
+}
+#phrasing p:nth-child(2)::first-line{
+    font-size:25px;
+    color: var(--prussian-blue);
+}
+ul > li::before{
+    content: "🐧";
+}
+ul > li::after{
+    content: "👾";
+}
+ul::first-letter{
+    font-family: "Dancing Script";
+    font-size: 24px;
+}
+li{ 
+    color: var(--pale-purple);
+    font-family: "Dancing Script";
+ }
+ div.gris{
+    color: var(--tekhelet);
+    text-shadow: 1px 1px 2px var(--pale-purple);
+ }
+ a{
+    color: var(--thistle);
+}
+mtable{
+    background-color: var(--pomp-and-power);
+    border:12px solid var(--prussian-blue);
+}
+body{
+    background-color: var(--tekhelet);
+    font-family: "Rubik Wet Paint";
+}
+hr{
+    background-color:var(--tekhelet);
+    height: 5px;
+}
+table{
+    background-color: var(--thistle);
+    border: 2px solid var(--pomp-and-power);
+}
+input:focus{
+    background-color: var(--prussian-blue);
+}
+a[href="https"]{
+    color: var(--pale-purple);
+}
+blockquote::before{
+    content: "👍";
+}
+blockquote::after{
+    content: "😎";
+}
+input[type]{
+    background-color: var(--thistle);
+}
