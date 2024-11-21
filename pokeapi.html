@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokeAPI</title>
+    <script src="js/pokeapi.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.yellow.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Rubik+Wet+Paint&family=Shadows+Into+Light&family=Sixtyfour+Convergence&family=Tiny5&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&family=Press+Start+2P&family=Rubik+Wet+Paint&family=Shadows+Into+Light&family=Sixtyfour+Convergence&family=Tiny5&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&family=Press+Start+2P&family=Rubik+Wet+Paint&family=Shadows+Into+Light&family=Sixtyfour+Convergence&family=Tiny5&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ga+Maamli&family=Lacquer&family=Press+Start+2P&family=Rubik+Wet+Paint&family=Shadows+Into+Light&family=Sixtyfour+Convergence&family=Tiny5&display=swap');
+        h1{
+            font-family: Sixtyfour Convergence;
+        }
+        dt{
+            font-family: Ga Maamli;
+        }
+        label.f{
+            font-family: Ga Maamli;
+        }
+        button.l{
+            font-family: Rubik Wet Paint;
+        }
+        dd{
+            font-family: Lacquer;
+        }
+        input{
+            font-family: Lacquer;
+        }
+    </style>
+</head>
+<body>
+<a href="index.html" style="font-size: 20px;">Inicio😁</a> <br/>
+<a href="Objetos2.html" style="font-size: 20px;">⬅Anterior</a>
+<a href="faker.html" style="font-size: 20px;">Siguiente➡</a>
+<hr /> 
+    <main class="container">
+        <h1>pokeAPI</h1>
+        <form id="search-form">
+            <img id="pokemon-image" src="" alt="Imagen del Pokémon">
+            <label class="f" for="pokemon-name-input">Busca un Pokémon:</label>
+            <input type="text" id="pokemon-name-input" placeholder="Ejemplo: Pikachu" required>
+            <button class="l" type="submit">Buscar</button>
+        </form>
+        <article>
+            <dl>
+                <dt>Nombre</dt>
+                <dd id="pokemon-name"></dd>
+                <dt>Número de Pokédex</dt>
+                <dd id="pokemon-id"></dd>
+                <dt>Tipos</dt>
+                <dd id="pokemon-types"></dd>
+                <dt>Estadísticas Base</dt>
+                <dd id="pokemon-stats"></dd>
+                <dt>Habilidades</dt>
+                <dd id="pokemon-abilities"></dd>
+                <dt>Sonido</dt>
+                <dd>
+                    <button id="pokemon-sound" disabled>Reproducir sonido</button>
+                </dd>
+            </dl>
+        </article>
+        <p id="error-message" style="color: rgb(255, 136, 0);"></p>
+    </main>
+</body>
+</html>
